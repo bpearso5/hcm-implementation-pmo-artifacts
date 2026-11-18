@@ -4,6 +4,14 @@ A project charter and a working RAID log for a cloud HCM and payroll integration
 
 > **All data is synthetic.** "Calder & Finch Advisory" and "Project Keystone" are invented. No client names, people, or figures appear anywhere in this repo.
 
+## Preview
+
+The Summary tab of the RAID log, as of mid-UAT. Every count is a formula.
+
+![RAID log Summary tab: open risks by rating, issue counts, and top 5 open risks](docs/images/raid_summary.png)
+
+**[View every tab as a PDF](raid/Project_Keystone_RAID_Log.pdf)** (opens in the browser) · [Download the Excel file](raid/Project_Keystone_RAID_Log.xlsx) to see the formulas
+
 ## The problem
 
 HR system go-lives rarely fail on configuration. They fail on data quality, payroll accuracy, and people who can't free up time to test, and those risks show up long before the go-live date if someone is tracking them. On an internal HR system implementation, I kept the payroll issues log through hypercare (115 items). That showed me how many go-live issues trace back to risks that could have been logged and managed in design. This repo shows the governance layer that catches them earlier.
@@ -14,6 +22,7 @@ HR system go-lives rarely fail on configuration. They fail on data quality, payr
 |---|---|
 | [`charter/Project_Charter.md`](charter/Project_Charter.md) | Business case, SMART objectives, scope, deliverables, phase gates with exit criteria, budget with management reserve, governance, escalation thresholds, and approvals |
 | [`raid/Project_Keystone_RAID_Log.xlsx`](raid/Project_Keystone_RAID_Log.xlsx) | RAID log as of mid-UAT: 11 risks, 6 assumptions, 8 issues, 6 dependencies, 5 decisions, plus a formula-driven summary |
+| [`raid/Project_Keystone_RAID_Log.pdf`](raid/Project_Keystone_RAID_Log.pdf) | Every tab as a PDF, viewable without Excel |
 | [`scripts/build_raid_log.py`](scripts/build_raid_log.py) | Python script that generates the workbook |
 
 ## How the RAID log works
